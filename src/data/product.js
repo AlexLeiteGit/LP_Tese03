@@ -63,5 +63,5 @@ export default {
     // CTA e WhatsApp
     beneficioPrincipal: "Recupere o que é seu por direito e pare de pagar INSS em duplicidade hoje mesmo.", 
     mensagemWhatsApp: "Envie esta mensagem como está para iniciar a conversa com o Atendente. Olá, tenho interesse na Restituição de INSS acima do teto para médicos.",   
-    whatsappLink: "https://wa.me/5511987654321?text=Envie%20esta%20mensagem%20como%20est%C3%A1%20para%20iniciar%20a%20conversa%20com%20o%20Atendente.%20Ol%C3%A1%2C%20tenho%20interesse%20na%20Restitui%C3%A7%C3%A3o%20de%20INSS%20acima%20do%20teto%20para%20m%C3%A9dicos.",       
+    whatsappLink: "https://wa.me/5511972732747?text=Envie%20esta%20mensagem%20como%20est%C3%A1%20para%20iniciar%20a%20conversa%20com%20o%20Atendente.%20Ol%C3%A1%2C%20tenho%20interesse%20na%20Restitui%C3%A7%C3%A3o%20de%20INSS%20acima%20do%20teto%20para%20m%C3%A9dicos.",       
   }
