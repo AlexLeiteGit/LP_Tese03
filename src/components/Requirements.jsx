@@ -12,7 +12,7 @@ const Requirements = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-white text-section mb-4">Quem tem direito?</h2>
+          <h2 className="font-display text-gold text-section mb-6 tracking-wide">Quem tem direito?</h2>
           <p className="font-body text-muted">Verifique se você se enquadra nos critérios para a restituição.</p>
         </motion.div>
 
@@ -24,8 +24,8 @@ const Requirements = () => {
             </h3>
             <ul className="space-y-4">
               {product.requisitos.map((req, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center shrink-0 mt-0.5">
+                <li key={idx} className="flex items-start gap-4 p-5 border border-white/5 hover:border-gold/20 transition-colors duration-500 rounded-sm">
+                  <div className="w-6 h-6 rounded-none border border-gold/40 flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                     </svg>
@@ -43,8 +43,8 @@ const Requirements = () => {
             </h3>
             <ul className="space-y-4">
               {product.documentos.map((doc, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <span className="text-gold font-bold">—</span>
+                <li key={idx} className="flex items-start gap-4 p-5 border border-white/5 hover:border-gold/20 transition-colors duration-500 rounded-sm">
+                  <span className="text-gold font-bold text-lg leading-none">—</span>
                   <span className="font-body text-white text-sm leading-relaxed">{doc}</span>
                 </li>
               ))}
