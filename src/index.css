@@ -51,8 +51,4 @@ body::before {
 ::-webkit-scrollbar-thumb { background: var(--color-gold); border-radius: 10px; }
 
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
