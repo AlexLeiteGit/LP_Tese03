@@ -5,6 +5,14 @@ const FloatingWhatsApp = () => {
   return (
     <a
       href={product.whatsappLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => {
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'conversion', { 'send_to': 'AW-11206879252' });
+          window.gtag('event', 'whatsapp_click');
+        }
+      }}
       className="fixed bottom-6 right-6 z-[200] group flex items-center gap-3 bg-wa text-white p-4 md:px-6 md:py-4 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.5)] transition-all hover:scale-110 active:scale-95 animate-pulse-wa"
     >
       <svg className="w-7 h-7 fill-current" viewBox="0 0 24 24">

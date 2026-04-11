@@ -38,6 +38,14 @@ const Navbar = () => {
 
         <a 
           href={product.whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {
+            if (typeof window !== 'undefined' && window.gtag) {
+              window.gtag('event', 'conversion', { 'send_to': 'AW-11206879252' });
+              window.gtag('event', 'whatsapp_click');
+            }
+          }}
           className="bg-wa hover:bg-wa/90 text-white font-bold py-2.5 px-6 rounded-full text-sm flex items-center gap-2 transition-all transform hover:scale-105 active:scale-95 shadow-lg"
         >
           <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">

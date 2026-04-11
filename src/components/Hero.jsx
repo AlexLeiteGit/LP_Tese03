@@ -48,6 +48,14 @@ const Hero = () => {
         >
           <a
             href={product.whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.gtag) {
+                window.gtag('event', 'conversion', { 'send_to': 'AW-11206879252' });
+                window.gtag('event', 'whatsapp_click');
+              }
+            }}
             className="group relative bg-[#1E2C1F] hover:bg-gold border border-gold/50 hover:border-gold text-gold hover:text-bg font-bold py-5 px-10 rounded-sm flex items-center gap-3 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-xl overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out"></div>

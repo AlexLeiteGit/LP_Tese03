@@ -12,7 +12,8 @@ const Footer = () => {
           <p className="font-body text-white/60 text-sm mb-4 leading-relaxed">
             Especialistas em Direito Tributário e Previdenciário para profissionais da saúde. Foco em resultados estratégicos e atendimento personalizado.
           </p>
-          <div className="font-display text-white/40 text-xs">OAB/SP 123.456</div>
+          <div className="font-display text-white/40 text-sm">OAB/RJ 020.543/2004</div>
+          <div className="font-display text-white/40 text-sm mt-1">CNPJ 07.062.507/0001-19</div>
         </div>
 
         <div className="max-w-md">
